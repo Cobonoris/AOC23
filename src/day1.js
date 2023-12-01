@@ -16,7 +16,6 @@ var fs = require("fs");
 var fileName = 'input.txt';
 var fileContent = fs.readFileSync(fileName, 'utf-8');
 var sum = 0;
-var test = "trebsevenineuchet";
 try {
     for (var _b = __values(fileContent.split(/[\r\n]+/)), _c = _b.next(); !_c.done; _c = _b.next()) {
         var line = _c.value;

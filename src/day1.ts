@@ -8,7 +8,7 @@ for (let line of fileContent.split(/[\r\n]+/)){
     let match1: any = line.match(/\d|one|two|three|four|five|six|seven|eight|nine/);
     let array = line.split('').reverse().join('')
     let match2: any = array.match(/\d|eno|owt|eerht|ruof|evif|xis|neves|thgie|enin/);
-    let filtered:any = [];
+    let filtered: any = [];
     filtered.push(match1[0]);
     filtered.push(match2[0]);
     
@@ -33,7 +33,6 @@ for (let line of fileContent.split(/[\r\n]+/)){
             filtered[0] = '9'; break;
         default:
             break;
-
     }
 
     switch(filtered[1]) {
@@ -57,7 +56,6 @@ for (let line of fileContent.split(/[\r\n]+/)){
             filtered[1] = '9'; break;
         default:
             break;
-
     }
     
     console.log(filtered)
@@ -66,7 +64,3 @@ for (let line of fileContent.split(/[\r\n]+/)){
 }
 
 console.log(sum);
-
-
-
-
